@@ -1,0 +1,27 @@
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+          
+            <th scope="col">Address</th>
+            <th scope="col">Specification</th>
+            <th scope="col">Fees</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let doctor of doctors">
+            <td>{{ doctor.id }}</td>
+            <td>{{ doctor.name }}</td>
+            <td>{{doctor.address}}</td>
+            <td>{{doctor.specification}}</td>
+            <td>{{doctor.fees}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  
